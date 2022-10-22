@@ -1,5 +1,6 @@
 FROM nginx:1.23.1
 
+ADD static-html/assets ./assets
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY static-html /usr/share/nginx/html
