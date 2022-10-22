@@ -5,4 +5,12 @@ server {
     root   /usr/share/nginx/html;
     index  index.html index.htm;
   }
+
+  location ~ \.css {
+    add_header  Content-Type    text/css;
+  }
+  
+  location ~ \.js {
+      add_header  Content-Type    application/x-javascript;
+  }
 }
