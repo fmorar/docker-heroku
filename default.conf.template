@@ -6,11 +6,11 @@ server {
     index  index.html index.htm;
   }
 
-  location ~ \.css {
+  location \assets\.css {
     add_header  Content-Type    text/css;
   }
-  
-  location ~ \.js {
+
+  location \assets\.js {
       add_header  Content-Type    application/x-javascript;
   }
 }
