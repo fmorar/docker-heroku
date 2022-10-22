@@ -1,5 +1,6 @@
 server {
   listen $PORT default_server;
+  include /etc/nginx/mime.types;
 
   location / {
     root   /usr/share/nginx/html;
@@ -12,5 +13,5 @@ server {
 
   location \assets\.js {
       add_header  Content-Type    application/x-javascript;
-  }
+  } 
 }
